@@ -12,25 +12,39 @@
   <body>
   <header class="header-footer-bg">
       <div class="center">
-          <h3>FeedHenry
-              <small>QuickStart - HTML5</small>
+          <h3>Orders<br />
+              <small>Mobile Microservices Example</small>
           </h3>
       </div>
   </header>
 
   <div id="count" class="">
       <div id="formWrapper">
-          <p id="description">This is a basic Javascript App that can take in your name, send it to a cloud app and display the response.</p>
+          <p id="description">This is a basic Javascript App which allows you to create orders specifying an account and product, along with quantity.</p>
           <br>
 
+          
           <div class="input-div">
-              <input id="hello_to" type="text" class="input-text" placeholder="Enter Your Name Here."/>
+              <select id="account" class="input-text" placeholder="Select an Account">
+                
+              </select>
+          </div>
+          
+          <div class="input-div">
+              <select id="product" class="input-text" placeholder="Select a Product">
+                
+              </select>
+          </div>
+          
+          <div class="input-div">
+              <input id="quantity" name="quantity" type="number" class="input-text" placeholder="Quantity" value=1 />
           </div>
 
           <br>
 
           <button id="say_hello" type="button" class="say-hello-button">Say Hello From The Cloud</button>
           <div id="cloudResponse" class="cloudResponse"></div>
+          
       </div>
   </div>
 
@@ -44,5 +58,6 @@
 
     <script src="feedhenry.js"></script>
     <script src="hello.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </body>
 </html>
