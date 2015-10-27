@@ -39,7 +39,7 @@ $fh.cloud(
       method : 'GET'
     },
     function (accounts) {
-      accounts.forEach(function(product){
+      accounts.forEach(function(account){
         $('#account').append('<option value="' + account.Id + '">' + account.name + '</option>')
       });
     },
